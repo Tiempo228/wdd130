@@ -3,6 +3,16 @@ main{
     box-sizing: border-box;
 }
 
+main img{
+    width: 150px;
+    height: auto;
+}
+
+main p{
+    padding: 0;
+}
+
+
 aside{
     width: 200px;
     margin: 10px;
@@ -20,14 +30,7 @@ aside img{
 
 }
 
-main img{
-    width: 150px;
-    height: auto;
-}
 
-main p{
-    padding: 0;
-}
 
 footer{
     margin-top: 10px;
