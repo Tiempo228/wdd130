@@ -1,31 +1,21 @@
-/*
-
-The :root Pseudo-Class
-
-    The :root pseudo-class is used to select the root element (html) of the document.
-    It is common to see the :root rule at the top of the CSS document, especially since global CSS 
-    variables will be declared within that rule.
-
-Writing Global CSS Variables
-
-    Global CSS variables are declared within the :root selector.
-    Global CSS variables are declared using the -- prefix followed by the variable name, of your choice 
-    and be sure to follow acceptable naming conventions. 
-
-*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root{
     --border: 1px solid black;
     --margin: 10px;
     --padding: 10px;
-    --color-heading-link:rgb(22, 22, 75);
+    --color-heading-link:rgb(6, 6, 57);
     --background-color: rgb(236, 234, 234);
 }
 
 
 
 nav{
-    background-color: var(--background-color);
+    background-color: rgb(150, 150, 224);
     padding: 10px;
 }
 
@@ -43,25 +33,31 @@ h1{
 
 main{
     max-width: 800px;
+    margin-bottom: 4rem;
+    
    
 }
 
 main img{
+    float: right;
     width: 150px;
     height: auto;
-    border: var(--border);
-    padding: var(--padding);
+    margin-left: 1rem;
+    background-color: var(--background-color);
+    /*border: var(--border);*/
     box-shadow: 0 0 30px gray;
 }
 
 main p{
     padding: 0;
+    text-align: justify;
 }
 
 
 aside{
-    width: 200px;
-    margin: var(--margin);
+    width: 250px;
+    position: relative;
+    margin-top: var(--margin);
     border: var(--border);
     padding: var(--padding);
     background-color: var(--background-color);
@@ -82,4 +78,20 @@ footer{
     margin: var(--margin);
     border-top: var(--border);
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box{
+    clear: both;
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0 / .1);
+    background-color: #ddd;
+    color: var(--color-heading-link);
+}
+
+aside  h2{
+    position: absolute;
+    top: 15px ;
+    left: 98px;
 }
