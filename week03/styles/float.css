@@ -1,3 +1,24 @@
+/*   
+Overview
+
+The CSS float property should be used for specific purposes and not for general layout on a page. 
+CSS Logo with a float: right declaration. For example, floating related images to the left or right 
+inside containers with paragraphs or other article content would be appropriate. 
+The element is removed from the normal flow layout when floated.
+Prepare
+
+CSS Float is a property that can be applied to elements to remove them from the normal flow of the page 
+and allow other elements to wrap around them. The float property can be applied to block-level elements 
+and inline elements. The float property can be set to left or right to move the element to the left or right 
+in the document flow. For example, this code block in this paragraph is floated to the right and contains 
+a shorthand margin declaration that applies a margin on all sides of the element.
+
+By default, the CSS float property is none. There is no need to apply the float declaration unless you intend to float 
+the element. To avoid unexpected layout issues, using the clear declaration to manage elements following a floated element
+as needed.
+   */
+
+
 main {
     width: 75vw;
     margin: 1rem auto;
@@ -7,7 +28,7 @@ main {
 }
 
 p {
-    text-align: justify;
+    text-align: justify; 
 }
 
 .col1 img {
@@ -22,5 +43,5 @@ footer {
     padding-top: 5px;
     /* Remove the comment below and observe the results. */
 
-    /* clear: both; */
+     clear: both; 
 }
