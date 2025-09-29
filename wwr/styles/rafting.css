@@ -3,6 +3,7 @@
     --secondary-color:#ab0525;
     --accent1-color:#000000;
     --accent2-color:#e1e6e8;
+    --accent3-color:#ffffff;
     --heading-font: "Time new roman", "Georgia", serif;
     --body-font:Arial, Helvetica, sans-serif;
 
@@ -22,12 +23,15 @@ body{
 header, main, footer{
     max-width: 840px;
     margin: 0 auto;
+
 }
+
 
 h1, h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+
 
 nav, p, section, article{
     margin: 20px ;
