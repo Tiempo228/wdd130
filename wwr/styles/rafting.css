@@ -119,13 +119,13 @@ nav, p, section, article{
 .hero article{
     position: absolute;
     top: 380px;
-    background-color:var(--secondary-color);
     height: auto;
     opacity: 1.3;
     text-align: justify;
-    color: rgb(255, 255, 255, .8);  
-    
+    background-color:var(--primary-color);
+    color: black;
 }   
+
 
 .hero article img{
     display: block;
@@ -134,14 +134,17 @@ nav, p, section, article{
     margin: 5px  5px 5px 20px;
 }
 
+
+
  section{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: auto auto auto;
     border: 1px solid var(--secondary-color);
-    height: auto;
+    max-height: auto;
     margin: 20px 0;
-    padding: 20px 0;
+   
+
 }
 
 section h2{
@@ -154,19 +157,20 @@ section h2{
 
 section img{
     width: 250px;
-    
+   
    
 
 }
 
 section p{
     text-align: justify;
-     overflow: hidden;
-     padding-top: 20px;
-     font-weight: var(--weight-font);
-
+    overflow: hidden;
+    margin: 60px 10px;
 }
 
+section div{
+    margin: 10px 0;
+}
 
 .adventure{
     display: grid;
@@ -254,8 +258,5 @@ span:hover{
     color: var(--primary-color);
 }
 
-footer p{
-    font-weight: var(--weight-font);
-    
-}
+
 
