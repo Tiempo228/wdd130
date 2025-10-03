@@ -4,9 +4,9 @@
     --accent1-color:#000000;
     --accent2-color:#e1e6e8;
     --accent3-color:#7ac7ec;
-    --weight-font: 700
-    --heading-font: "Time new roman", "Georgia", serif;
-    --body-font:Arial, Helvetica, sans-serif;
+    --weight-font: 700;
+    --primary-font: "Times New Roman", Times, serif;
+    --secondary-font:Arial, Helvetica, sans-serif;
 
 }
 
@@ -17,8 +17,9 @@
     font-weight: var(--font-weight)
 }
 
+
 body{
-    font-family: var(--body-font);
+    font-family: var(--secondary-font);
     color: var(--accent1-color);
 }
 
@@ -122,11 +123,9 @@ nav, p, section, article{
     height: auto;
     opacity: 1.3;
     text-align: justify;
-    color: rgb(255, 255, 255, .8);
-    
+    color: rgb(255, 255, 255, .8);  
     
 }   
-
 
 .hero article img{
     display: block;
@@ -135,17 +134,14 @@ nav, p, section, article{
     margin: 5px  5px 5px 20px;
 }
 
-
-
  section{
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: auto auto auto;
     border: 1px solid var(--secondary-color);
-    max-height: auto;
+    height: auto;
     margin: 20px 0;
     padding: 20px 0;
-
 }
 
 section h2{
