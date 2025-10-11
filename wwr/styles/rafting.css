@@ -319,13 +319,11 @@ form{
 }
 
 input[type="text"]{
-    width: 13vw;
     padding: .5rem;
     font-size: 1.2rem;
 }
 
 input[type="email"]{
-    width: 13vw;
     padding: .5rem;
     font-size: 1.2rem;
 }
