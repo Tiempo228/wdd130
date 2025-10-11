@@ -157,9 +157,6 @@ section h2{
 
 section img{
     width: 250px;
-   
-   
-
 }
 
 section p{
@@ -321,11 +318,13 @@ form{
 input[type="text"]{
     padding: .5rem;
     font-size: 1.2rem;
+    width: 100%;
 }
 
 input[type="email"]{
     padding: .5rem;
     font-size: 1.2rem;
+    width: 100%;
 }
 
 .radio-form{
@@ -353,6 +352,7 @@ input[type="email"]{
 
 input[type="radio"]{  
     margin: 1rem;
+    
 }
 
 input[type="checkbox"]{  
