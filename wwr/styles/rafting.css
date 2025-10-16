@@ -23,8 +23,8 @@ body{
     color: var(--accent1-color);
 }
 
-header, main, footer{
-    max-width: 840px;
+header, main, aside, footer{
+    max-width: 960px;
     margin: 10px auto;
 
 }
@@ -35,6 +35,7 @@ header{
     opacity: 1.5;
     border: 1px solid var(--secondary-color);
     margin-bottom: 20px;
+    
 }
 
 header img{
@@ -58,15 +59,19 @@ header nav{
 
 
 nav a:hover{
-    color: var(--accent3-color);
+    
+    background-color: var(--secondary-color);
 
 }
 
 
 nav a{
+    display: inline-block;
     text-decoration: none;
     padding: 10px 30px;
-    color: var(--secondary-color);
+    margin: 0 .5rem;
+    color: white;
+    background-color: #1a5276;
 }
 
 
@@ -238,6 +243,11 @@ footer p{
 .socialmedia a{
     margin: 5px;
     padding: 5px;
+    background-color: initial;
+}
+
+.socialmedia a:hover{
+    background-color: inherit;
 }
 
 
@@ -417,4 +427,358 @@ button:hover{
     font-weight: 900;
 }
 
+/* Newsletter form*/
 
+.newsletter{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+    position: sticky;
+    top: 0;
+    
+}
+
+.newsletter h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    
+}
+
+.newsletter button[type="submit"]{
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.newsletter-form {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    display: grid;
+    gap: .5rem;
+    margin: 0 10rem;
+
+}
+
+.action {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.action h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.action p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.action a {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+    margin: 2rem auto;
+}
+
+.css-grid{
+    padding: 2rem 1rem;
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+    padding: 2rem;
+}
+
+.css-grid h2{
+    text-align: center;
+    margin-bottom: .5rem;
+    color: #1a5276;
+    font-size: 1.5rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.grid-container {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.grid-item img {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h3 {
+    color: #1a5276;
+    font-size: 1.8rem;
+}
+
+.grid-item p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
+    text-align: justify;
+}
+
+/*-------------------*/
+
+/*Hero Section with Call to Action*/
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-section p{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem 5rem;
+    line-height: 1.6;
+   
+}
+
+.cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            margin: 1rem auto;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+.cta-button:hover {
+            background-color: #8a0420;
+            transform: translateY(-3px);
+        }
+
+/* Featured Trips Section */
+.featured-trips {
+            padding: 2rem 1rem;
+            background-color: #f8f9fa;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr auto;
+            
+        }
+
+.featured-trips h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+
+        }
+
+.trips-grid {
+            grid-column: 1/2;
+            grid-row: 2/-1;
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            
+        }
+
+.trip-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr auto;
+
+        }
+
+
+
+.trip-content{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+
+
+}
+
+.trip-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+.trip-image {
+            height: 20vh;
+            background-color: #7ac7ec;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            
+        }
+
+.trip-content {
+            padding: .75rem;
+           
+        }
+
+.trip-content h3{
+    font-size: 1.5rem;
+    color:#2c3e50;
+    margin-top: 1rem;
+    
+}
+
+
+.trip-duration {
+            color: var(--secondary-color);
+            font-weight: bold;
+            margin-top: 3rem;
+            text-align: center; 
+           
+            
+        }
+
+.trip-description {
+            margin-bottom: 1rem;
+            
+        }
+
+.trip-features {
+            margin-bottom: 1.5rem;
+            list-style-type: none;
+        }
+
+.trip-features li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1rem;
+            
+        }
+
+.trip-features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+            margin: 0  1.5rem;
+           
+        }
+
+.trip-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+.book-button {
+            display: block;
+            text-align: center;
+            background-color: #1a5276;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+.book-button:hover {
+            background-color: #0d3a5c;
+        }
+
+
+/* Trips Table Section */
+.trips-table-section {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+
+
+        }
+
+.trips-table-section h2 {
+            text-align: center;
+            margin: 1rem 0;
+            
+        }
+
+.trips-table-section p {
+            text-align: center;
+            margin: 0 auto 2rem;
+           
+        }
+
+.table-container {
+            overflow-x: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+.trips-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+.trips-table th {
+            background-color: #1a5276;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+        }
+
+.trips-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+.trips-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+.trips-table tr:hover {
+            background-color: #e8f4fd;
+        }
+
+        
